@@ -1,0 +1,102 @@
+// made by aug
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "builtin",
+    "source": "apple",
+    "color": {
+        "1": "white",
+        "2": "white"
+    }
+  },
+  "display": {
+    "separator": ">   ",
+    "color": {
+      "separator": "white"
+    },
+    "constants": [
+      "x_x"
+    ]
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "{$1}"
+    },
+    "break",
+    {
+      "key": "Distro         ",
+      "type": "os",
+      "format": "{name}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Environment    ",
+      "type": "de",
+      "format": "{pretty-name}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Window Manager ",
+      "type": "wm",
+      "keycolor": "white"
+    },
+    {
+      "key": "Shell          ",
+      "type": "shell",
+      "format": "{1}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Terminal       ",
+      "type": "terminal",
+      "keycolor": "white"
+    },
+    {
+      "key": "Display        ",
+      "type": "display",
+      "format": "{1}x{2} @{3}hz",
+      "keycolor": "white"
+    },
+    {
+      "key": "Lifespan       ",
+      "type": "battery",
+      "format": "{4} {5}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Lifetime       ",
+      "type": "uptime",
+      "keycolor": "white"
+    },
+    {
+      "key": "Playing        ",
+      "type": "media",
+      "format": "{1}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Cpu            ",
+      "type": "cpu",
+      "format": "{name}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Gpu            ",
+      "type": "gpu",
+      "format": "{name}",
+      "keycolor": "white"
+    },
+    {
+      "key": "Ram            ",
+      "type": "memory",
+      "keycolor": "white"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 7,
+      "symbol": "circle"
+    }
+  ]
+}
